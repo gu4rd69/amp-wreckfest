@@ -1,0 +1,18 @@
+{
+  "Ports": [
+    {
+      "Name": "GamePort",
+      "DisplayName": "Spiel-Port",
+      "Description": "Hauptport für das Gameplay",
+      "Type": "UDP",
+      "DefaultPort": 33540
+    },
+    {
+      "Name": "QueryPort",
+      "DisplayName": "Steam Query Port",
+      "Description": "Wird für die Serverliste benötigt",
+      "Type": "UDP",
+      "DefaultPort": 27026
+    }
+  ]
+}
