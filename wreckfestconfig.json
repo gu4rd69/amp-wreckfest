@@ -1,0 +1,44 @@
+{
+  "UpdateStages": [
+    {
+      "StageName": "SteamCMD Download",
+      "Type": "SteamCMD",
+      "AppID": 361580,
+      "RunValidation": true,
+      "ForcePlatform": "Windows"
+    }
+  ],
+  "Sections": [
+    {
+      "Name": "WreckfestSettings",
+      "DisplayName": "Wreckfest Einstellungen",
+      "Description": "Konfiguration für deinen Wreckfest-Server",
+      "Category": "Game Settings",
+      "Settings": [
+        {
+          "Name": "ServerName",
+          "DisplayName": "Server-Name",
+          "Description": "Der Name des Servers in der Lobby (Max 63 Zeichen).",
+          "Type": "String",
+          "DefaultValue": "Mein AMP Wreckfest Server"
+        },
+        {
+          "Name": "ServerPassword",
+          "DisplayName": "Server-Passwort",
+          "Description": "Lass das Feld leer, um den Server öffentlich zu machen.",
+          "Type": "String",
+          "DefaultValue": "2026"
+        },
+        {
+          "Name": "MaxPlayers",
+          "DisplayName": "Maximale Spieler",
+          "Description": "Maximale Anzahl an Fahrern auf der Strecke.",
+          "Type": "Numeric",
+          "DefaultValue": 24,
+          "MinValue": 2,
+          "MaxValue": 24
+        }
+      ]
+    }
+  ]
+}
