@@ -6,8 +6,8 @@ GenericModule.Meta.Category=Games
 Application.Name=Wreckfest Dedicated Server
 GenericModule.AppExe=Wreckfest.exe
 
-# Wreckfest verlangt die Parameter im Format: -s server_config=X -server_set parameter=wert
-GenericModule.AppArgs=-s server_config=server_config.cfg -server_set server_name="{{GenericModule.CustomSettings.ServerName}}" password="{{GenericModule.CustomSettings.ServerPassword}}" max_players={{GenericModule.CustomSettings.MaxPlayers}} game_port={{GenericModule.GamePort}} query_port={{GenericModule.QueryPort}}
+# Übergabe aller Standard- und Gameplay-Optionen beim Serverstart
+GenericModule.AppArgs=-s server_config=server_config.cfg -server_set server_name="{{GenericModule.CustomSettings.ServerName}}" password="{{GenericModule.CustomSettings.ServerPassword}}" max_players={{GenericModule.CustomSettings.MaxPlayers}} game_port={{GenericModule.GamePort}} query_port={{GenericModule.QueryPort}} el_bots={{GenericModule.CustomSettings.BotCount}} ai_difficulty="{{GenericModule.CustomSettings.BotDifficulty}}" damage_level="{{GenericModule.CustomSettings.DamageModel}}"
 
 GenericModule.StartMatch=Wreckfest.exe
 GenericModule.KillMatch=Wreckfest
