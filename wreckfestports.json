@@ -10,7 +10,7 @@
     {
       "Name": "QueryPort",
       "DisplayName": "Steam Query Port",
-      "Description": "Wird für die Serverliste benötigt",
+      "Description": "Wird für die Steam-Serverliste benötigt",
       "Type": "UDP",
       "DefaultPort": 27026
     }
