@@ -1,0 +1,16 @@
+# --- Wreckfest AMP Template ---
+GenericModule.Meta.AppConfigId=wreckfest
+GenericModule.Meta.DisplayName=Wreckfest Dedicated Server
+GenericModule.Meta.Category=Games
+
+Application.Name=Wreckfest Dedicated Server
+GenericModule.AppExe=Wreckfest.exe
+
+# Wreckfest verlangt die Parameter im Format: -s server_config=X -server_set parameter=wert
+GenericModule.AppArgs=-s server_config=server_config.cfg -server_set server_name="{{GenericModule.CustomSettings.ServerName}}" password="{{GenericModule.CustomSettings.ServerPassword}}" max_players={{GenericModule.CustomSettings.MaxPlayers}} game_port={{GenericModule.GamePort}} query_port={{GenericModule.QueryPort}}
+
+GenericModule.StartMatch=Wreckfest.exe
+GenericModule.KillMatch=Wreckfest
+
+# Aktiviert das SteamCMD-Verhalten im Interface
+GenericModule.ConfigCustomFlags=SteamCMD
