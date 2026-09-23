@@ -1,5 +1,5 @@
 # --- Wreckfest AMP Template ---
-GenericModule.Meta.AppConfigId=wreckfest
+GenericModule.Meta.AppConfigId=wreckfestI
 GenericModule.Meta.DisplayName=Wreckfest Dedicated Server
 GenericModule.Meta.Category=Games
 
