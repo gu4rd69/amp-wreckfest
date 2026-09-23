@@ -11,8 +11,8 @@
   "Sections": [
     {
       "Name": "WreckfestSettings",
-      "DisplayName": "Wreckfest Einstellungen",
-      "Description": "Konfiguration für deinen Wreckfest-Server",
+      "DisplayName": "Wreckfest Basiseinstellungen",
+      "Description": "Allgemeine Konfiguration für deinen Wreckfest-Server",
       "Category": "Game Settings",
       "Settings": [
         {
@@ -25,18 +25,59 @@
         {
           "Name": "ServerPassword",
           "DisplayName": "Server-Passwort",
-          "Description": "Lass das Feld leer, um den Server öffentlich zu machen.",
+          "Description": "Lass das Feld leer für eine öffentliche Lobby.",
           "Type": "String",
-          "DefaultValue": "2026"
+          "DefaultValue": ""
         },
         {
           "Name": "MaxPlayers",
           "DisplayName": "Maximale Spieler",
-          "Description": "Maximale Anzahl an Fahrern auf der Strecke.",
+          "Description": "Maximale Anzahl an menschlichen Fahrern.",
           "Type": "Numeric",
           "DefaultValue": 24,
           "MinValue": 2,
           "MaxValue": 24
+        }
+      ]
+    },
+    {
+      "Name": "WreckfestGameplay",
+      "DisplayName": "Wreckfest Gameplay",
+      "Description": "Regeln für Bots und Schaden auf der Strecke",
+      "Category": "Game Settings",
+      "Settings": [
+        {
+          "Name": "BotCount",
+          "DisplayName": "Anzahl der KI-Bots",
+          "Description": "Wie viele computergesteuerte Fahrer das Feld auffüllen sollen.",
+          "Type": "Numeric",
+          "DefaultValue": 12,
+          "MinValue": 0,
+          "MaxValue": 24
+        },
+        {
+          "Name": "BotDifficulty",
+          "DisplayName": "Bot-Schwierigkeit",
+          "Description": "Fahrkönnen der KI-Gegner.",
+          "Type": "Enum",
+          "DefaultValue": "amateur",
+          "EnumValues": {
+            "novice": "Anfänger (Novice)",
+            "amateur": "Fortgeschritten (Amateur)",
+            "expert": "Experte (Expert)"
+          }
+        },
+        {
+          "Name": "DamageModel",
+          "DisplayName": "Schadensmodell",
+          "Description": "Wie stark sich Crashs auf das Fahrverhalten auswirken.",
+          "Type": "Enum",
+          "DefaultValue": "normal",
+          "EnumValues": {
+            "normal": "Normal",
+            "realistic": "Realistisch (Realistic)",
+            "intense": "Extrem (Intense)"
+          }
         }
       ]
     }
